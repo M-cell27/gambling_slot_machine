@@ -264,7 +264,7 @@ def main():
     speak(f"\nYou left with ${balance}")
     speak(f"{client_name} Thank you for playing!, Hope you come back to play again, see you soon!")
     speak("Goodbye!")
-    typewriterprint("\n-------------------------------🎰-------------------------------\n")
+    typewriter("\n-------------------------------🎰-------------------------------\n")
 
 
 main()
