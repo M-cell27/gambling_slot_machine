@@ -7,7 +7,7 @@ import pyttsx3 #voice(speaker)
 import pygame
 from pygame.locals import *
 from pygame import mixer
-# libraries for dinamic writing
+# libraries for typewriter
 import sys
 import os
 import time
@@ -151,7 +151,7 @@ def print_slot_machine(columns):
 
         print()
 
-
+# balance
 def deposit():
     while True:
         speak(f"{client_name} How much money do you want to deposit?")
@@ -227,7 +227,7 @@ def spin(balance):
     speak(f"{client_name} You are betting ${bet} on {lines} lines.")
     typewriter(f"{lines} : ${total_bet}")
     speak(f"\nTotal bet is equal to ${total_bet}\n")
-    # ramdom spinning for slots
+    # random spinning for slots
     print("\n")
     slots = get_slot_machine_spin(rows, cols, symbol_count)
     print_slot_machine(slots)
@@ -238,7 +238,7 @@ def spin(balance):
     return winnings - total_bet
 
 # -------------------------------🎰-------------------------------
-#program_opening
+# the program begins
 play_bgm()
 program_opening()
 wishes()
